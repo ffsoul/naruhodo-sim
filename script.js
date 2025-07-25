@@ -66,7 +66,7 @@ function preload() {
   narupalm = loadImage(
     "assets/narupalm.png"
   );
-  naruhzoom = loadImage(
+  naruzoom = loadImage(
     "assets/naruzoom.png"
   );
   nyarluhodo = loadImage(
@@ -101,9 +101,6 @@ function preload() {
   );
   ebishodo = loadImage(
     "assets/ebishodo.png"
-  );
-  naruhodo = loadImage(
-    "assets/naru.png"
   );
   
 

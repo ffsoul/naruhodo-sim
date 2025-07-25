@@ -163,8 +163,8 @@ function setup() {
     boxes[i] = new Box({
       x: random(width),
       y: random(height),
-      width: 20,
-      height: 20,
+      width: 30,
+      height: 30,
       naru: naruArray[Math.floor(random(naruArray.length))],
     });
   }
@@ -299,10 +299,9 @@ for (let i = boxes.length-1; i >= 0; i--) {
           b.push();
         }
       }
-      
     }
   }
-
+  
   // wallBtm.show();
   // wallTop.show();
   // wallL.show();
@@ -364,8 +363,8 @@ function mouseDragged(){
   let b = new Box({
     x: mouseX,
     y: mouseY,
-    width: 20,
-    height: 20,
+    width: 30,
+    height: 30,
     naru: naruArray[Math.floor(random(naruArray.length))],
   });
   boxes.push(b);

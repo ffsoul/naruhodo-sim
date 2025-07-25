@@ -27,7 +27,7 @@ var numBoxes = 1000;
 
 function preload() {
   naruhodo = loadImage(
-    "https://cdn.glitch.global/d48f5805-8434-4231-84cd-aa4162521bd7/745884812614828122.png?v=1648523325920"
+    "assets/naruhodo.png"
   );
 
   hodonaru = loadImage(
@@ -67,10 +67,6 @@ function preload() {
     "https://cdn.glitch.global/d48f5805-8434-4231-84cd-aa4162521bd7/bababa.gif?v=1648591575682"
   );
 
-  //load the heart image
-  heart = loadImage(
-    "https://cdn.glitch.global/d48f5805-8434-4231-84cd-aa4162521bd7/745884812614828122.png?v=1648523325920"
-  );
 
   // set naru array
   naruArray = [

@@ -75,33 +75,33 @@ function preload() {
   naruwoke = loadImage(
     "assets/naruwoke.png"
   );
-  rolandhodo = loadImage(
-    "assets/rolandhodo.png"
-  );
-  naruthumb = loadImage(
-    "assets/naruthumb.png"
-  );
-  naruhatR = loadImage(
-    "assets/naruhatR.png"
-  );
-  naruhatL = loadImage(
-    "assets/naruhatL.png"
-  );
-  narudust = loadImage(
-    "assets/narudust.gif"
-  );
-  narhodo = loadImage(
-    "assets/narhodo.png"
-  );
-  naruhodo3d = loadImage(
-    "assets/naruhodo3d.png"
-  );
-  grisuhodo = loadImage(
-    "assets/grisuhodo.png"
-  );
-  ebishodo = loadImage(
-    "assets/ebishodo.png"
-  );
+  // rolandhodo = loadImage(
+  //   "assets/rolandhodo.png"
+  // );
+  // naruthumb = loadImage(
+  //   "assets/naruthumb.png"
+  // );
+  // naruhatR = loadImage(
+  //   "assets/naruhatR.png"
+  // );
+  // naruhatL = loadImage(
+  //   "assets/naruhatL.png"
+  // );
+  // narudust = loadImage(
+  //   "assets/narudust.gif"
+  // );
+  // narhodo = loadImage(
+  //   "assets/narhodo.png"
+  // );
+  // naruhodo3d = loadImage(
+  //   "assets/naruhodo3d.png"
+  // );
+  // grisuhodo = loadImage(
+  //   "assets/grisuhodo.png"
+  // );
+  // ebishodo = loadImage(
+  //   "assets/ebishodo.png"
+  // );
   
 
 
@@ -121,15 +121,15 @@ function preload() {
     naruzoom,
     nyarluhodo,
     naruwoke,
-    rolandhodo,
-    naruthumb,
-    naruhatR,
-    naruhatL,
-    narudust,
-    narhodo,
-    naruhodo3d,
-    grisuhodo,
-    ebishodo,
+    // rolandhodo,
+    // naruthumb,
+    // naruhatR,
+    // naruhatL,
+    // narudust,
+    // narhodo,
+    // naruhodo3d,
+    // grisuhodo,
+    // ebishodo,
   ];
 
   getAudioContext().suspend();

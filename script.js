@@ -295,7 +295,11 @@ for (let i = boxes.length-1; i >= 0; i--) {
       //only push them every 60 frames
       if (frameCount % 25 == 0) {
         boxes[i].push();
+        for ( let b of boxes) {
+          b.push();
+        }
       }
+      
     }
   }
 
@@ -347,8 +351,6 @@ function mousePressed() {
         for (let i = 0; i < numBoxes; i++) {
       boxes[i].push();
     }
-    boxes.push(b);
-
 
 for ( let b of boxes) {
   b.push();

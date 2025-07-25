@@ -19,6 +19,13 @@ var lyric = {
   text:""
 };
 
+var naruArray = [];
+
+var isPartyMode = false;
+
+var boxes = [];
+var numBoxes = 20;
+
 function preload() {
   naruhodo = loadImage(
     "assets/naruhodo.png"

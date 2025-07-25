@@ -24,7 +24,7 @@ var naruArray = [];
 var isPartyMode = false;
 
 var boxes = [];
-var numBoxes = 20;
+var numBoxes = 100;
 
 function preload() {
   naruhodo = loadImage(
@@ -163,8 +163,8 @@ function setup() {
     boxes[i] = new Box({
       x: random(width),
       y: random(height),
-      width: 80,
-      height: 80,
+      width: 20,
+      height: 20,
       naru: naruArray[Math.floor(random(naruArray.length))],
     });
   }
@@ -360,8 +360,8 @@ function mouseDragged(){
   let b = new Box({
     x: mouseX,
     y: mouseY,
-    width: 80,
-    height: 80,
+    width: 20,
+    height: 20,
     naru: naruArray[Math.floor(random(naruArray.length))],
   });
   boxes.push(b);

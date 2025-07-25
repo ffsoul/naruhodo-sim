@@ -41,30 +41,75 @@ function preload() {
   narubonk = loadImage(
     "assets/naruhammer.png"
   );
+
+  naruhodosmol = loadImage(
+    "assets/narumini.png"
+  );
+
+  naruhodostonks = loadImage(
+    "assets/narustonks.png"
+  );
+
+  naruhodomaffs = loadImage(
+    "assets/narumaths.png"
+  );
+
+  narunotstonks = loadImage(
+    "assets/narunotstonks.png"
+  );
+
+  mudahodo = loadImage(
+    "assets/diohodo.png"
+  );
+
+  naruhodopat = loadImage(
+    "assets/naruhodopat.gif"
+  );
+
+  narupalm = loadImage(
+    "assets/narupalm.png"
+  );
+
+  nyarluhodo = loadImage(
+    "assets/nyarluhodo.png"
+  );
+
+  naruwoke = loadImage(
+    "assets/naruwoke.png"
+  );
+
   rolandhodo = loadImage(
     "assets/rolandhodo.png"
   );
+
   naruthumb = loadImage(
     "assets/naruthumb.png"
   );
+
   naruhatR = loadImage(
     "assets/naruhatR.png"
   );
+
   naruhatL = loadImage(
     "assets/naruhatL.png"
   );
+
   narudust = loadImage(
     "assets/narudust.gif"
   );
+
   narhodo = loadImage(
     "assets/narhodo.png"
   );
+
   naruhodo3d = loadImage(
     "assets/naruhodo3d.png"
   );
+
   grisuhodo = loadImage(
     "assets/grisuhodo.png"
   );
+  
   ebishodo = loadImage(
     "assets/ebishodo.png"
   );
@@ -77,6 +122,15 @@ function preload() {
     hodonaru,
     nahodoru,
     narubonk,
+    naruhodosmol,
+    naruhodostonks,
+    naruhodomaffs,
+    narunotstonks,
+    mudahodo,
+    naruhodopat,
+    narupalm,
+    nyarluhodo,
+    naruwoke,
     rolandhodo,
     naruthumb,
     naruhatR,

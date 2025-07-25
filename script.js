@@ -34,44 +34,44 @@ function preload() {
     "assets/hodonaru.png"
   );
 
-  nahodoru = loadImage(
-    "assets/nahodoru.png"
-  );
+  // nahodoru = loadImage(
+  //   "assets/nahodoru.png"
+  // );
 
-  narubonk = loadImage(
-    "assets/naruhammer.png"
-  );
+  // narubonk = loadImage(
+  //   "assets/naruhammer.png"
+  // );
 
-  naruhodosmol = loadImage(
-    "assets/narumini.png"
-  );
+  // naruhodosmol = loadImage(
+  //   "assets/narumini.png"
+  // );
 
-  naruhodostonks = loadImage(
-    "assets/narustonks.png"
-  );
+  // naruhodostonks = loadImage(
+  //   "assets/narustonks.png"
+  // );
 
-  naruhodomaffs = loadImage(
-    "assets/narumaths.png"
-  );
+  // naruhodomaffs = loadImage(
+  //   "assets/narumaths.png"
+  // );
 
-  narunotstonks = loadImage(
-    "assets/narunotstonks.png"
-  );
-  mudahodo = loadImage(
-    "assets/diohodo.png"
-  )
-  naruhodopat = loadImage(
-    "assets/naruhodopat.gif"
-  );
-  narupalm = loadImage(
-    "assets/narupalm.png"
-  );
-  nyarluhodo = loadImage(
-    "assets/nyarluhodo.png"
-  );
-  naruwoke = loadImage(
-    "assets/naruwoke.png"
-  );
+  // narunotstonks = loadImage(
+  //   "assets/narunotstonks.png"
+  // );
+  // mudahodo = loadImage(
+  //   "assets/diohodo.png"
+  // )
+  // naruhodopat = loadImage(
+  //   "assets/naruhodopat.gif"
+  // );
+  // narupalm = loadImage(
+  //   "assets/narupalm.png"
+  // );
+  // nyarluhodo = loadImage(
+  //   "assets/nyarluhodo.png"
+  // );
+  // naruwoke = loadImage(
+  //   "assets/naruwoke.png"
+  // );
   rolandhodo = loadImage(
     "assets/rolandhodo.png"
   );
@@ -106,17 +106,17 @@ function preload() {
   naruArray = [
     naruhodo,
     hodonaru,
-    nahodoru,
-    narubonk,
-    naruhodosmol,
-    naruhodostonks,
-    naruhodomaffs,
-    narunotstonks,
-    mudahodo,
-    naruhodopat,
-    narupalm,
-    nyarluhodo,
-    naruwoke,
+    // nahodoru,
+    // narubonk,
+    // naruhodosmol,
+    // naruhodostonks,
+    // naruhodomaffs,
+    // narunotstonks,
+    // mudahodo,
+    // naruhodopat,
+    // narupalm,
+    // nyarluhodo,
+    // naruwoke,
     rolandhodo,
     naruthumb,
     naruhatR,
@@ -167,7 +167,7 @@ function setup() {
   wallBtm = new Box({
     x: width / 2,
     y: height - 5,
-    width: width,
+    width: width+100,
     height: 10,
     isStatic: true,
   });
@@ -175,7 +175,7 @@ function setup() {
   wallTop = new Box({
     x: width / 2,
     y: 5,
-    width: width,
+    width: width+100,
     height: 10,
     isStatic: true,
   });
@@ -184,7 +184,7 @@ function setup() {
     x: 5,
     y: height / 2,
     width: 10,
-    height: height,
+    height: height+100,
     isStatic: true,
   });
 
@@ -192,7 +192,7 @@ function setup() {
     x: width - 5,
     y: height / 2,
     width: 10,
-    height: height,
+    height: height+100,
     isStatic: true,
   });
 

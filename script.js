@@ -66,9 +66,6 @@ function preload() {
   narupalm = loadImage(
     "assets/narupalm.png"
   );
-  // naruzoom = loadImage(
-  //   "assets/naruzoom.png"
-  // );
   nyarluhodo = loadImage(
     "assets/nyarluhodo.png"
   );
@@ -118,7 +115,6 @@ function preload() {
     mudahodo,
     naruhodopat,
     narupalm,
-    // naruzoom,
     nyarluhodo,
     naruwoke,
     // rolandhodo,

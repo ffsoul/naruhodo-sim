@@ -2,6 +2,7 @@ var Engine = Matter.Engine,
   Render = Matter.Render,
   World = Matter.World,
   Bodies = Matter.Bodies;
+  Vector = Matter.Vector;
 Body = Matter.Body;
 
 var engine;
@@ -17,13 +18,6 @@ var lyric = {
   y: 100,
   text:""
 };
-
-var naruArray = [];
-
-var isPartyMode = false;
-
-var boxes = [];
-var numBoxes = 1000;
 
 function preload() {
   naruhodo = loadImage(
@@ -155,15 +149,15 @@ function setup() {
 
 
   engine = Engine.create();
-  engine.gravity.y = 0;
+  // engine.gravity.y = 0;
   world = engine.world;
 
   for (let i = 0; i < numBoxes; i++) {
     boxes[i] = new Box({
       x: random(width),
       y: random(height),
-      width: 20,
-      height: 20,
+      width: 80,
+      height: 80,
       naru: naruArray[Math.floor(random(naruArray.length))],
     });
   }
@@ -186,29 +180,29 @@ function setup() {
     isStatic: true,
   });
 
-  wallTop = new Box({
-    x: width / 2,
-    y: 5,
-    width: width+100,
-    height: 10,
-    isStatic: true,
-  });
+  // wallTop = new Box({
+  //   x: width / 2,
+  //   y: 5,
+  //   width: width+100,
+  //   height: 10,
+  //   isStatic: true,
+  // });
 
-  wallL = new Box({
-    x: 5,
-    y: height / 2,
-    width: 10,
-    height: height+100,
-    isStatic: true,
-  });
+  // wallL = new Box({
+  //   x: 5,
+  //   y: height / 2,
+  //   width: 10,
+  //   height: height+100,
+  //   isStatic: true,
+  // });
 
-  wallR = new Box({
-    x: width - 5,
-    y: height / 2,
-    width: 10,
-    height: height+100,
-    isStatic: true,
-  });
+  // wallR = new Box({
+  //   x: width - 5,
+  //   y: height / 2,
+  //   width: 10,
+  //   height: height+100,
+  //   isStatic: true,
+  // });
 
   Engine.run(engine);
 
@@ -257,6 +251,16 @@ function mouseDragged() {
 function draw() {
   background(0);
 
+Engine.update(engine);
+for (let i = boxes.length-1; i >= 0; i--) {
+  boxes[i].show();
+  // Remove the Body from the world and the array
+  if (boxes[i].checkEdge()) {
+    boxes[i].removeBody();
+    boxes.splice(i, 1);
+  }
+}
+
   var randoHodo = random(naruArray);
   var c = colors((frameCount % 1000) / 1000).rgb(); // will run from 0 - 1 in increments of 1000
 
@@ -288,10 +292,10 @@ function draw() {
     }
   }
 
-  wallBtm.show();
-  wallTop.show();
-  wallL.show();
-  wallR.show();
+  // wallBtm.show();
+  // wallTop.show();
+  // wallL.show();
+  // wallR.show();
 
   textAlign(CENTER);
   fill("white");
@@ -308,11 +312,15 @@ function draw() {
   }
 }
 
-function mouseClicked() {
+function mousePressed() {
+
+
+
   if (
     dist(mouseX, mouseY, button.position.x, button.position.y) < button.radius
   ) {
     userStartAudio();
+
     isPartyMode = !isPartyMode;
 
     
@@ -321,14 +329,52 @@ function mouseClicked() {
       engine.gravity.y = 1;
       song.loop(0, 1);
 
+
     } else {
       engine.gravity.y = 0;
       song.pause(0, 1);
+
     }
   }
   
         for (let i = 0; i < numBoxes; i++) {
       boxes[i].push();
     }
+
+for ( let b of boxes) {
+  b.push();
 }
+
+}
+
+
+
+function mouseDragged(){
+  let b = new Box({
+    x: mouseX,
+    y: mouseY,
+    width: 80,
+    height: 80,
+    naru: naruArray[Math.floor(random(naruArray.length))],
+  });
+  boxes.push(b);
+}
+
+
+
+// magnet mode
+// function mouseDragged(){
+//   for (let i = 0; i < numBoxes; i++) {
+
+//     boxes[i] = new Box({
+//     x: mouseX,
+//     y: mouseY,
+//     width: 80,
+//     height: 80,
+//     naru: naruArray[Math.floor(random(naruArray.length))],
+//   });
+//   boxes[i].push();
+// }
+// }
+
 

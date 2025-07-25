@@ -24,7 +24,7 @@ var naruArray = [];
 var isPartyMode = false;
 
 var boxes = [];
-var numBoxes = 100;
+var numBoxes = 20;
 
 function preload() {
   naruhodo = loadImage(
@@ -151,6 +151,16 @@ function preload() {
   );
 }
 
+
+getAudioContext().suspend();
+soundFormats("mp3", "ogg");
+
+song = loadSound(
+  "assets/umapyoi.mp3"
+);
+
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
@@ -163,8 +173,8 @@ function setup() {
     boxes[i] = new Box({
       x: random(width),
       y: random(height),
-      width: 30,
-      height: 30,
+      width: 80,
+      height: 80,
       naru: naruArray[Math.floor(random(naruArray.length))],
     });
   }
@@ -301,7 +311,7 @@ for (let i = boxes.length-1; i >= 0; i--) {
       }
     }
   }
-  
+
   // wallBtm.show();
   // wallTop.show();
   // wallL.show();
@@ -332,6 +342,7 @@ function mousePressed() {
     userStartAudio();
 
     isPartyMode = !isPartyMode;
+    
 
     
  
@@ -363,8 +374,8 @@ function mouseDragged(){
   let b = new Box({
     x: mouseX,
     y: mouseY,
-    width: 30,
-    height: 30,
+    width: 80,
+    height: 80,
     naru: naruArray[Math.floor(random(naruArray.length))],
   });
   boxes.push(b);

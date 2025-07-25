@@ -250,7 +250,6 @@ function changeText(val){
   lyric.y = random(height-20)
 }
 
-
 function mouseDragged() {
   boxes.push(new Box(mouseX, mouseY, 10, 10));
 }

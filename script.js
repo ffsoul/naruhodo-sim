@@ -23,7 +23,7 @@ var naruArray = [];
 var isPartyMode = false;
 
 var boxes = [];
-var numBoxes = 10;
+var numBoxes = 1000;
 
 function preload() {
   naruhodo = loadImage(
@@ -250,9 +250,9 @@ function changeText(val){
   lyric.y = random(height-20)
 }
 
-// function mouseDragged() {
-//   boxes.push(new Box(mouseX, mouseY, 10, 10));
-// }
+function mouseDragged() {
+  boxes.push(new Box(mouseX, mouseY, 10, 10));
+}
 
 function draw() {
   background(0);
@@ -266,6 +266,11 @@ function draw() {
     background(c[0], c[1], c[2]);
     image(hodonaru, random(-3, 3), random(-3, 3), width, height);
   }
+
+  for (var i = 0; i < boxes.length; i++)
+    {
+        boxes[i].show();
+    }  
 
   for (let i = 0; i < numBoxes; i++) {
     boxes[i].show();
@@ -304,8 +309,6 @@ function draw() {
 }
 
 function mouseClicked() {
-  
-  boxes.push(new Box(mouseX, mouseY, 10, 10));
   if (
     dist(mouseX, mouseY, button.position.x, button.position.y) < button.radius
   ) {

@@ -31,41 +31,81 @@ function preload() {
   );
 
   hodonaru = loadImage(
-    " https://cdn.glitch.global/d48f5805-8434-4231-84cd-aa4162521bd7/hodonaru.png?v=1648524220674"
+    "assets/hodonaru.png"
   );
 
   nahodoru = loadImage(
-    " https://cdn.glitch.global/0cf608c0-4d17-4aac-b837-107e38ad3733/933242392113451018.png?v=1648528223569"
+    "assets/nahodoru.png"
   );
 
   narubonk = loadImage(
-    " https://cdn.glitch.global/0cf608c0-4d17-4aac-b837-107e38ad3733/775491495058210816.png?v=1648528223569"
+    "assets/naruhammer.png"
   );
 
   naruhodosmol = loadImage(
-    " https://cdn.glitch.global/0cf608c0-4d17-4aac-b837-107e38ad3733/745887968639844413.png?v=1648528223569"
+    "assets/narumini.png"
   );
 
   naruhodostonks = loadImage(
-    " https://cdn.glitch.global/0cf608c0-4d17-4aac-b837-107e38ad3733/933240741227003965.png?v=1648528223569"
+    "assets/narustonks.png"
   );
 
   naruhodomaffs = loadImage(
-    " https://cdn.glitch.global/0cf608c0-4d17-4aac-b837-107e38ad3733/933240741398974474.png?v=1648528223569"
+    "assets/narumaths.png"
   );
 
   narunotstonks = loadImage(
-    " https://cdn.glitch.global/0cf608c0-4d17-4aac-b837-107e38ad3733/933240776001990686.png?v=1648528223569"
+    "assets/narunotstonks.png"
   );
   mudahodo = loadImage(
-    "https://cdn.glitch.global/d48f5805-8434-4231-84cd-aa4162521bd7/933962497709461524.png?1648591344459"
-  );
-  yarehodo = loadImage(
-    "https://cdn.glitch.global/d48f5805-8434-4231-84cd-aa4162521bd7/933962497709461524.png?v=1648591344459"
-  );
+    "assets/diohodo.png"
+  )
   naruhodopat = loadImage(
-    "https://cdn.glitch.global/d48f5805-8434-4231-84cd-aa4162521bd7/bababa.gif?v=1648591575682"
+    "assets/naruhodopat.gif"
   );
+  narupalm = loadImage(
+    "assets/narupalm.png"
+  );
+  naruhzoom = loadImage(
+    "assets/naruzoom.png"
+  );
+  nyarluhodo = loadImage(
+    "assets/nyarluhodo.png"
+  );
+  naruwoke = loadImage(
+    "assets/naruwoke.png"
+  );
+  rolandhodo = loadImage(
+    "assets/rolandhodo.png"
+  );
+  naruthumb = loadImage(
+    "assets/naruthumb.png"
+  );
+  naruhatR = loadImage(
+    "assets/naruhatR.png"
+  );
+  naruhatL = loadImage(
+    "assets/naruhatL.png"
+  );
+  narudust = loadImage(
+    "assets/narudust.gif"
+  );
+  narhodo = loadImage(
+    "assets/narhodo.png"
+  );
+  naruhodo3d = loadImage(
+    "assets/naruhodo3d.png"
+  );
+  grisuhodo = loadImage(
+    "assets/grisuhodo.png"
+  );
+  ebishodo = loadImage(
+    "assets/ebishodo.png"
+  );
+  naruhodo = loadImage(
+    "assets/naru.png"
+  );
+  
 
 
   // set naru array
@@ -79,15 +119,27 @@ function preload() {
     naruhodomaffs,
     narunotstonks,
     mudahodo,
-    yarehodo,
     naruhodopat,
+    narupalm,
+    naruzoom,
+    nyarluhodo,
+    naruwoke,
+    rolandhodo,
+    naruthumb,
+    naruhatR,
+    naruhatL,
+    narudust,
+    narhodo,
+    naruhodo3d,
+    grisuhodo,
+    ebishodo,
   ];
 
   getAudioContext().suspend();
   soundFormats("mp3", "ogg");
 
   song = loadSound(
-    "https://cdn.glitch.global/c267ae39-5a12-4ae6-ab1d-4a54b718c347/The%20Battle%20Cats%20x%20Annihilation%20City%20BGM%20(With%20Lyrics).mp3?v=1649093485412"
+    "assets/bcac.mp3"
   );
 }
 

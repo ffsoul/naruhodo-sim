@@ -109,7 +109,7 @@ function preload() {
   grisuhodo = loadImage(
     "assets/grisuhodo.png"
   );
-  
+
   ebishodo = loadImage(
     "assets/ebishodo.png"
   );
@@ -250,6 +250,11 @@ function changeText(val){
   lyric.y = random(height-20)
 }
 
+
+function mouseDragged() {
+  boxes.push(new Box(mouseX, mouseY, 10, 10));
+}
+
 function draw() {
   background(0);
 
@@ -322,3 +327,4 @@ function mouseClicked() {
       boxes[i].push();
     }
 }
+

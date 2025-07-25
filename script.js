@@ -156,10 +156,9 @@ getAudioContext().suspend();
 soundFormats("mp3", "ogg");
 
 song = loadSound(
-  "assets/umapyoi.mp3"
+  "assets/bcac.mp3"
 );
 
-}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);

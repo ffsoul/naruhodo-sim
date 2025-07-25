@@ -23,7 +23,7 @@ var naruArray = [];
 var isPartyMode = false;
 
 var boxes = [];
-var numBoxes = 1000;
+var numBoxes = 10;
 
 function preload() {
   naruhodo = loadImage(
@@ -250,9 +250,9 @@ function changeText(val){
   lyric.y = random(height-20)
 }
 
-function mouseDragged() {
-  boxes.push(new Box(mouseX, mouseY, 10, 10));
-}
+// function mouseDragged() {
+//   boxes.push(new Box(mouseX, mouseY, 10, 10));
+// }
 
 function draw() {
   background(0);
@@ -304,6 +304,8 @@ function draw() {
 }
 
 function mouseClicked() {
+  
+  boxes.push(new Box(mouseX, mouseY, 10, 10));
   if (
     dist(mouseX, mouseY, button.position.x, button.position.y) < button.radius
   ) {

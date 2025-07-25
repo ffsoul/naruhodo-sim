@@ -347,6 +347,8 @@ function mousePressed() {
         for (let i = 0; i < numBoxes; i++) {
       boxes[i].push();
     }
+    boxes.push(b);
+
 
 for ( let b of boxes) {
   b.push();
